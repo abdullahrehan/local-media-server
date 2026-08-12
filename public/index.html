@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Media Server</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="loginScreen" class="login-screen">
+    <form id="loginForm" class="login-panel" autocomplete="off">
+      <label for="codeInput">Enter Code</label>
+      <input
+        id="codeInput"
+        class="code-input"
+        name="code"
+        type="text"
+        inputmode="text"
+        maxlength="4"
+        autocapitalize="characters"
+        spellcheck="false"
+        aria-describedby="loginMessage"
+        autofocus
+      />
+      <button class="unlock-button" type="submit">Open Viewer</button>
+      <p id="loginMessage" class="login-message"></p>
+    </form>
+  </main>
+
+  <div class="viewer">
+    <button id="prevButton" class="navigation prev" aria-label="Previous media">
+      &lsaquo;
+    </button>
+
+    <div id="mediaContainer" class="media-container">
+      Loading...
+    </div>
+
+    <button id="nextButton" class="navigation next" aria-label="Next media">
+      &rsaquo;
+    </button>
+
+    <div id="counter" class="counter"></div>
+    <div id="filename" class="filename"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
