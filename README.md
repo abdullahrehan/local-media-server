@@ -4,6 +4,18 @@ Show photos and videos from your laptop on another device, such as a phone, tabl
 
 This project scans a local `media/` folder, starts a small web server, and lets other devices on the same Wi-Fi open the viewer using your laptop IP address and port.
 
+## Project Name
+
+```text
+Local Media Server
+```
+
+## GitHub Description
+
+```text
+A simple Node.js media viewer for showing local photos and videos on TVs, phones, and other devices over the same Wi-Fi using your laptop IP and port.
+```
+
 ## Features
 
 - Shows local images and videos in a full-screen viewer
@@ -200,4 +212,3 @@ Ctrl + C
 ```
 
 in the terminal where the server is running.
-
